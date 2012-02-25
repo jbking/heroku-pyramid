@@ -1,0 +1,6 @@
+waitress==0.8.1
+pyramid==1.3a9
+pyramid_tm==0.3
+pyramid_fanstatic==0.3
+psycopg2==2.4.4
+zope.sqlalchemy==0.7

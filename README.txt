@@ -6,9 +6,8 @@ Getting Started
 
 - cd <directory containing this file>
 
-- $venv/bin/python setup.py develop
+- heroku create --stack cedar
 
-- $venv/bin/populate_heroku-app development.ini
+- git push heroku master
 
-- $venv/bin/pserve development.ini
-
+- heroku run 'python -m herokuapp.scripts.populate'

@@ -12,4 +12,8 @@ Getting Started
 
 - git push heroku master
 
-- heroku run 'python -m herokuapp.scripts.populate'
+Caveat
+------
+
+Current branch can't work on Heroku by the stack issue.
+Use master branch until the issue solved.

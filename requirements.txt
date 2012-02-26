@@ -4,3 +4,4 @@ pyramid_tm==0.3
 pyramid_fanstatic==0.3
 psycopg2==2.4.4
 zope.sqlalchemy==0.7
+git+git://github.com/jbking/fa.bootstrap.git@937c47c65c

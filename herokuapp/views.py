@@ -1,11 +1,8 @@
-from pyramid.view import view_config
+from pyramid.renderers import get_renderer
+from fa.bootstrap import fanstatic_resources
 
-from .models import (
-    DBSession,
-    MyModel,
-    )
 
-@view_config(route_name='home', renderer='templates/mytemplate.pt')
-def my_view(request):
-    one = DBSession.query(MyModel).filter(MyModel.name=='one').first()
-    return {'one':one, 'project':'heroku-app'}
+def view_home(context, request):
+    fanstatic_resources.bootstrap.need()
+    main_template = get_renderer('herokuapp:templates/main_template.pt').implementation()
+    return {'main_template': main_template, 'project':'heroku-app'}
